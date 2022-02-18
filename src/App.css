@@ -1,38 +1,177 @@
-.App {
-  text-align: center;
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+header {
+    padding: 30px 0 30px 0;
+    background: #343a40;
+    color: #fff;
+    text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header h1 {
+    display: inline;
+    margin-left: 15px;
+    font-weight: 300;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input:focus, 
+select:focus
+{
+    outline: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+
+.search-area form {
+    margin: 0 auto;
+    padding: 20px 0px 20px 140px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+.search-area button {
+    background: #052e57;
+    color: #fff;
+    border: none;
+    padding: 8px 13px 10px 13px;
+    margin: 0 15px 0 0;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+    width: 40%;
+    padding: 5px;
+   font-size: 1rem;
+}
+
+
+.list {
+    display: grid;
+    margin: 20px 0 50px 0;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 1fr;
+    grid-gap: 1em;
+}
+
+.card-container {
+    width: 250px;
+    border: 1px solid rgba(0,0,0,.125);
+    margin: 0 auto;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: #6c757d;
+    padding: 30px;
+}
+
+.card-container:hover{
+    background-color: rgb(155, 146, 146);
+}
+
+.desc {
+    height: 130px;
+    padding: 10px;
+}
+
+.desc h2 {
+    font-size: 1em;    
+    font-weight: 400;
+    color: white;
+}
+.desc h3, p {
+    font-weight: 300;
+    color: white;
+}
+
+.desc h3 {
+    color: white;
+    font-size: 1em;
+    padding: 10px 0 10px 0;
+}
+
+.desc p {
+    color: white;
+}
+
+img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+}
+
+select {
+    background-color: #ffffff;
+    color: black;
+    height: 32px;
+    width: 10rem;
+}
+
+.btnFlex{
+    display: flex;
+    flex-direction: row;
+     justify-content: space-between;
+    align-items: center;
+    width: 20%;
+    max-width: 90%;
+    margin: auto;
+}
+
+.btnFlex button{
+background-color: rgb(3, 14, 105);
+border-radius: 6px;
+padding: 3px 20px;
+border: none;
+color: white;
+margin-bottom: 2rem;
+cursor: pointer;
+margin-right: 1.3rem;
+}
+
+.btnFlex button:hover{
+background-color: rgb(63, 45, 146);
+}
+
+.selectFlex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 20%;
+    max-width: 60%;
+    margin: auto;
+}
+.sel{
+    margin-right: 5rem;
+}
+
+.card-book{
+    width: 30%;
+    border: 1px solid rgba(0,0,0,.125);
+    height: 100vh;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: #6c757d;
+    padding: 30px;
+}
+
+.cardFlex{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.cardFlex h2,
+.cardFlex h3,
+.cardFlex p{
+    color: black;
+}
+
+.description{
+    max-width: 90%;
+    margin: 5rem auto;
 }
