@@ -1,5 +1,4 @@
 import React,{useEffect} from 'react'
-import request from 'superagent';
 import {useSelector} from 'react-redux'
 
 export default function BookOpened() {
